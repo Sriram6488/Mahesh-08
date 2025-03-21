@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="fachome.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="srkr.png" alt="College Logo">
+        <h1>SRKR Engineering college</h1>
+        <a href="@iedk">LogOut</a>
+    </div>
+    <div class="container">
+        <h1>Faculty Dashboard</h1>
+        <h2>Post Attendance</h2>
+        <form action="submit_attendance.php" method="post">
+            <label for="subject">Select Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="DevOps">DevOps</option>
+                <option value="S.E">S.E</option>
+                <option value="mst">MST</option>
+                <option value="CN">CN</option>
+            </select>
+
+            <label for="hours">Select Hours Taken:</label>
+            <select id="hours" name="hours" required>
+                <option value="1">1 Hour</option>
+                <option value="2">2 Hours</option>
+                <option value="3">3 Hours</option>
+                <option value="4">4 Hours</option>
+            </select>
+
+            <label for="students">Enter Student Registered numbers (last two digits):</label>
+            <input type="text" id="students" name="students" placeholder="E.g., 01, 02, 03" required>
+            
+            <button type="submit">Submit Attendance</button>
+        </form>
+    </div>
+</body>
+</html>
